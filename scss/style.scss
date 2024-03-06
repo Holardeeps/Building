@@ -551,7 +551,22 @@ section{
     }
 }
 
+.pricing{
+    background: var(--light-bg);
 
+    .box-container{
+        @include grid(30rem);
+
+        .box{
+            background: var(--white);
+            width: 29rem;
+            text-align: center;
+            // align-items: center;
+            // justify-content: center;
+            
+        }
+    }
+}
 
 
 

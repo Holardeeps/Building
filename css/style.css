@@ -543,6 +543,20 @@ section {
   color: var(--yellow);
 }
 
+.pricing {
+  background: var(--light-bg);
+}
+.pricing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.pricing .box-container .box {
+  background: var(--white);
+  width: 29rem;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
