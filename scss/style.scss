@@ -374,7 +374,7 @@ section{
         .video{
             flex: 1 1 41rem;
             
-            .video{
+            video{
                 width: 100%;
             }
         }
@@ -390,10 +390,60 @@ section{
             }
         }
     }
+
+    .box-container{
+        margin-top: 3rem;
+        @include grid(16rem);
+        align-items: flex-end;
+
+        .box{
+            text-align: center;
+            background: var(--light-bg);
+            padding: 3rem 2rem;
+
+            h3{
+                @include titleText(4rem);
+            }
+            p{
+                @include graphText(1.6rem);
+                padding-top: .5rem; 
+            }
+        }
+    }
 }
 
 
+.services{
+    background: var(--light-bg);
 
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            text-align: center;
+            padding: 3rem;
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            border: var(--border);
+
+            &:hover img{
+                transform: translateY(-1rem);
+            }
+
+            img{
+                height: 7rem;
+                margin-bottom: .7rem;
+            }
+            h3{
+                @include titleText(2rem);
+                padding: 1rem 0;
+            }
+            p{
+                @include graphText(1.5rem);
+            }
+        }
+    }
+}
 
 
 
