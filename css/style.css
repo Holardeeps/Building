@@ -498,40 +498,48 @@ section {
   line-height: 7.5rem;
 }
 
-.reviews .reviews-slider .slide p {
-  font-size: 1.5rem;
+.reviews .slide {
+  margin-left: 1.6rem;
+}
+.reviews .slide p {
+  padding: 1.5rem;
+  gap: 1.5rem;
+  font-size: 1.4rem;
   color: var(--light-color);
   line-height: 2;
   position: relative;
   background: var(--light-bg);
   margin-bottom: 3rem;
 }
-.reviews .reviews-slider .slide p::before {
+.reviews .slide p::before {
   content: "";
   position: absolute;
   bottom: -1rem;
   left: 2rem;
   height: 2rem;
   width: 2rem;
+  background: var(--light-bg);
+  transform: rotate(45deg);
 }
-.reviews .reviews-slider .slide .user {
+.reviews .slide .user {
   display: flex;
   align-items: center;
-  padding-top: 1rem;
+  gap: 1.5rem;
 }
-.reviews .reviews-slider .slide .user img {
+.reviews .slide .user img {
   height: 8rem;
   width: 8rem;
 }
-.reviews .reviews-slider .slide .user .info {
-  padding: 3rem 2rem;
-}
-.reviews .reviews-slider .slide .user .info h3 {
+.reviews .slide .user h3 {
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;
 }
-.reviews .reviews-slider .slide .user .info .stars {
+.reviews .slide .user .stars {
+  padding-top: 0.5rem;
+}
+.reviews .slide .user .stars i {
+  font-size: 1.5rem;
   color: var(--yellow);
 }
 
