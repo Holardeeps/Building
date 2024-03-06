@@ -498,6 +498,43 @@ section {
   line-height: 7.5rem;
 }
 
+.reviews .reviews-slider .slide p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  position: relative;
+  background: var(--light-bg);
+  margin-bottom: 3rem;
+}
+.reviews .reviews-slider .slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+.reviews .reviews-slider .slide .user {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.reviews .reviews-slider .slide .user img {
+  height: 8rem;
+  width: 8rem;
+}
+.reviews .reviews-slider .slide .user .info {
+  padding: 3rem 2rem;
+}
+.reviews .reviews-slider .slide .user .info h3 {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.reviews .reviews-slider .slide .user .info .stars {
+  color: var(--yellow);
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
