@@ -643,6 +643,7 @@ section {
   background: var(--light-bg);
 }
 .blogs .slide {
+  padding: 0.5rem;
   text-align: center;
 }
 .blogs .slide:hover .image img {
@@ -676,6 +677,35 @@ section {
   font-size: 1.4rem;
   color: var(--light-color);
   line-height: 2;
+}
+
+.logo-container {
+  text-align: center;
+}
+.logo-container img {
+  height: 10rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.footer {
+  text-align: center;
+}
+.footer .links {
+  margin: 0.5rem;
+}
+.footer .links:hover i {
+  color: var(--white);
+}
+.footer .credit {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.footer .credit span {
+  color: var(--white);
 }
 
 @media (max-width: 1200px) {

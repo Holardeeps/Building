@@ -652,6 +652,7 @@ section{
 
     .slide{
         // width: 35rem;
+        padding: .5rem;
         text-align: center;
 
         &:hover .image img{
@@ -688,9 +689,36 @@ section{
     }
 }
 
+.logo-container{
+    text-align: center;
 
+    img{
+        height: 10rem;
+        pointer-events: none;
+        user-select: none;
+    }
+}
 
+.footer{
+    text-align: center;
 
+    .links{
+        margin: .5rem;
+
+        &:hover i{
+            color: var(--white);
+        }        
+    }
+    .credit{
+        @include titleText(2rem);
+        margin-top: 2rem;
+        padding-top: 1rem;
+
+        span{
+            color: var(--white);
+        }
+    }
+}
 
 
 
