@@ -705,7 +705,7 @@ section {
   padding-top: 1rem;
 }
 .footer .credit span {
-  color: var(--white);
+  color: var(--yellow);
 }
 
 @media (max-width: 1200px) {
